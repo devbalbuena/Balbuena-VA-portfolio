@@ -104,7 +104,7 @@ export default function ContactForm() {
   const isDisabled = isSubmitting || cooldown > 0 || sessionCount >= 3;
 
   return (
-    <div id="contact" className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-slate-100 dark:border-slate-700">
+    <div id="contact" className="bg-white dark:bg-slate-900 rounded-xl p-6 shadow-sm border border-slate-100 dark:border-slate-800">
       <h3 className="text-xl font-semibold mb-4 text-slate-900 dark:text-white">Send me a message</h3>
       
       <form onSubmit={handleSubmit} className="space-y-4">

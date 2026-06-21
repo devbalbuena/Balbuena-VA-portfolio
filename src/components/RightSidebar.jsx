@@ -27,7 +27,7 @@ export default function RightSidebar() {
       {/* Contact Info Card */}
       <motion.div 
         variants={fadeInUp}
-        className="p-6 rounded-2xl bg-white/50 dark:bg-slate-900/50 border border-slate-100 dark:border-white/10 shadow-sm backdrop-blur-md"
+        className="p-6 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md"
       >
         <h3 className="text-lg font-semibold mb-4 text-slate-900 dark:text-white">Contact Info</h3>
         <div className="space-y-4">

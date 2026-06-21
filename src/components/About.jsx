@@ -7,7 +7,7 @@ export default function About() {
     <motion.section 
       id="about"
       variants={fadeInUp}
-      className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900/50 border border-slate-100 dark:border-white/10 shadow-sm backdrop-blur-md"
+      className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md"
     >
       <h2 className="text-2xl font-semibold mb-4 text-slate-900 dark:text-white flex items-center gap-2">
         <span className="w-8 h-[2px] bg-teal-600 rounded-full" />

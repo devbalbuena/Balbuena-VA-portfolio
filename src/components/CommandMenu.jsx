@@ -51,10 +51,10 @@ export default function CommandMenu() {
   return (
     <div className="fixed inset-0 z-50 flex items-start justify-center pt-[20vh] bg-slate-900/50 backdrop-blur-sm" onClick={() => setOpen(false)}>
       <Command 
-        className="w-full max-w-lg bg-white dark:bg-slate-800 rounded-xl shadow-2xl overflow-hidden border border-slate-200 dark:border-slate-700 mx-4 flex flex-col"
+        className="w-full max-w-lg bg-white dark:bg-slate-900 rounded-xl shadow-2xl overflow-hidden border border-slate-200 dark:border-slate-800 mx-4 flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center border-b border-slate-100 dark:border-slate-700 px-4 py-3">
+        <div className="flex items-center border-b border-slate-100 dark:border-slate-800 px-4 py-3">
           <Search className="w-5 h-5 text-slate-400 mr-3" />
           <Command.Input 
             className="flex-1 outline-none bg-transparent text-slate-900 dark:text-white placeholder-slate-400" 

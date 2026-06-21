@@ -48,7 +48,7 @@ export default function Gallery() {
           {marqueeImages.map((src, idx) => (
             <div 
               key={idx} 
-              className="w-64 h-48 mx-3 flex-shrink-0 cursor-pointer overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800"
+              className="w-80 md:w-96 h-56 md:h-64 mx-4 flex-shrink-0 cursor-pointer overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800"
               onClick={() => setSelectedImage(src)}
             >
               <img 
@@ -66,7 +66,7 @@ export default function Gallery() {
           {marqueeImages.map((src, idx) => (
             <div 
               key={`dup-${idx}`} 
-              className="w-64 h-48 mx-3 flex-shrink-0 cursor-pointer overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800"
+              className="w-80 md:w-96 h-56 md:h-64 mx-4 flex-shrink-0 cursor-pointer overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800"
               onClick={() => setSelectedImage(src)}
             >
               <img 
@@ -120,7 +120,7 @@ export default function Gallery() {
           100% { transform: translateX(-100%); }
         }
         .animate-marquee {
-          animation: marquee 30s linear infinite;
+          animation: marquee 20s linear infinite;
         }
         @media (prefers-reduced-motion: reduce) {
           .animate-marquee {

@@ -30,7 +30,7 @@ export default function Skills() {
     <motion.section 
       id="skills"
       variants={fadeInUp}
-      className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900/50 border border-slate-100 dark:border-white/10 shadow-sm backdrop-blur-md"
+      className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md"
     >
       <h2 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-white flex items-center gap-2">
         <span className="w-8 h-[2px] bg-teal-600 rounded-full" />
@@ -40,10 +40,10 @@ export default function Skills() {
       <div className="space-y-6">
         {skillCategories.map((category, index) => (
           <div key={index}>
-            <h3 className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-3 uppercase tracking-wider">
+            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3 uppercase tracking-wider">
               {category.title}
             </h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-3">
               {category.skills.map((skill, i) => (
                 <span 
                   key={i}

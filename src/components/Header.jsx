@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <motion.header 
       variants={fadeInUp}
-      className="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-white/10 shadow-sm backdrop-blur-md relative overflow-hidden"
+      className="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md relative overflow-hidden"
     >
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-teal-50 to-white dark:from-teal-900/20 dark:to-slate-900 -z-10" />
       
@@ -35,14 +35,10 @@ export default function Header() {
         </div>
         
         <div className="flex-1 space-y-3">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 justify-between">
+          <div className="flex flex-col gap-2">
             <div>
               <h1 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white m-0">Dexter Balbuena</h1>
               <TypewriterSubtitle />
-            </div>
-            <div className="flex items-center gap-2 px-3 py-1 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full text-xs font-semibold w-max border border-green-200 dark:border-green-800/50">
-              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-              Available for Work
             </div>
           </div>
           
@@ -78,14 +74,20 @@ export default function Header() {
               <Mail size={18} />
             </a>
             
-            <a 
-              href="/cv.pdf" 
-              download
-              className="ml-auto md:ml-4 inline-flex items-center gap-2 px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-lg font-medium transition-transform hover:scale-105 active:scale-95 text-sm"
-            >
-              <Download size={16} />
-              Download Resume
-            </a>
+            <div className="ml-auto flex flex-wrap items-center gap-3">
+              <div className="flex items-center gap-2 px-3 py-1.5 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full text-xs font-semibold border border-green-200 dark:border-green-800/50">
+                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                Available for Work
+              </div>
+              <a 
+                href="/cv.pdf" 
+                download
+                className="inline-flex items-center gap-2 px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-lg font-medium transition-transform hover:scale-105 active:scale-95 text-sm"
+              >
+                <Download size={16} />
+                Download Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ export default function Testimonials() {
     <motion.section 
       id="testimonials"
       variants={fadeInUp}
-      className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900/50 border border-slate-100 dark:border-white/10 shadow-sm backdrop-blur-md"
+      className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md"
     >
       <h2 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-white flex items-center gap-2">
         <span className="w-8 h-[2px] bg-teal-600 rounded-full" />
@@ -38,10 +38,10 @@ export default function Testimonials() {
           <motion.div 
             key={index}
             whileHover={{ y: -4 }}
-            className="p-6 rounded-xl bg-gradient-to-br from-slate-50 to-white dark:from-slate-800 dark:to-slate-900/50 border border-slate-100 dark:border-slate-700 shadow-sm relative overflow-hidden"
+            className="flex flex-col justify-between h-full p-8 rounded-xl bg-gradient-to-br from-slate-50 to-white dark:from-slate-800 dark:to-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm relative overflow-hidden"
           >
             <Quote className="absolute top-4 right-4 text-teal-100 dark:text-teal-900/40 w-12 h-12 rotate-12" />
-            <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6 relative z-10 italic">
+            <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-8 relative z-10 italic">
               "{testimonial.quote}"
             </p>
             <div className="flex items-center gap-3 relative z-10">
