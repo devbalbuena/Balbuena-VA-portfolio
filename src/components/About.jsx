@@ -10,7 +10,7 @@ export default function About() {
       className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md card-hover"
     >
       <h2 className="text-2xl font-semibold mb-4 text-slate-900 dark:text-white flex items-center gap-2">
-        <span className="w-8 h-[2px] bg-teal-600 rounded-full" />
+        <span className="w-8 h-[2px] bg-indigo-600 rounded-full" />
         About Me
       </h2>
       <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-[15px] sm:text-base">

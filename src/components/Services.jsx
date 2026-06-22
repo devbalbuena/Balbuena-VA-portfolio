@@ -76,7 +76,7 @@ export default function Services() {
       className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md card-hover"
     >
       <h2 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-white flex items-center gap-2">
-        <span className="w-8 h-[2px] bg-teal-600 rounded-full" />
+        <span className="w-8 h-[2px] bg-indigo-600 rounded-full" />
         Services Offered
       </h2>
       
@@ -88,10 +88,10 @@ export default function Services() {
               key={index}
               whileHover={{ scale: 1.02, y: -4 }}
               transition={{ duration: 0.2 }}
-              className="flex flex-col h-full p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-lg hover:border-teal-300 dark:hover:border-teal-700 hover:bg-teal-50/30 dark:hover:bg-teal-900/20 transition-all duration-300 group"
+              className="flex flex-col h-full p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-lg hover:border-indigo-300 dark:hover:border-indigo-700 hover:bg-indigo-50/30 dark:hover:bg-indigo-900/20 transition-all duration-300 group"
             >
-              <div className="w-12 h-12 rounded-lg bg-teal-50 dark:bg-teal-900/30 flex items-center justify-center mb-4 group-hover:bg-teal-100 dark:group-hover:bg-teal-900/50 transition-colors">
-                <Icon className="text-teal-600 dark:text-teal-400" size={24} />
+              <div className="w-12 h-12 rounded-lg bg-indigo-50 dark:bg-indigo-900/30 flex items-center justify-center mb-4 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/50 transition-colors">
+                <Icon className="text-indigo-600 dark:text-indigo-400" size={24} />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">
                 {service.title}
@@ -99,7 +99,7 @@ export default function Services() {
               <ul className="space-y-2">
                 {service.items.map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
-                    <span className="text-teal-500 mt-1">•</span>
+                    <span className="text-indigo-500 mt-1">•</span>
                     <span className="leading-snug">{item}</span>
                   </li>
                 ))}

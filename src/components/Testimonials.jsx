@@ -29,7 +29,7 @@ export default function Testimonials() {
       className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md card-hover"
     >
       <h2 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-white flex items-center gap-2">
-        <span className="w-8 h-[2px] bg-teal-600 rounded-full" />
+        <span className="w-8 h-[2px] bg-indigo-600 rounded-full" />
         Client Testimonials
       </h2>
       
@@ -40,12 +40,12 @@ export default function Testimonials() {
             whileHover={{ y: -4 }}
             className="flex flex-col justify-between h-full p-8 rounded-xl bg-gradient-to-br from-slate-50 to-white dark:from-slate-800 dark:to-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm relative overflow-hidden"
           >
-            <Quote className="absolute top-4 right-4 text-teal-100 dark:text-teal-900/40 w-12 h-12 rotate-12" />
+            <Quote className="absolute top-4 right-4 text-indigo-100 dark:text-indigo-900/40 w-12 h-12 rotate-12" />
             <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-8 relative z-10 italic">
               "{testimonial.quote}"
             </p>
             <div className="flex items-center gap-3 relative z-10">
-              <div className="w-10 h-10 rounded-full bg-teal-100 dark:bg-teal-900/50 flex items-center justify-center text-teal-700 dark:text-teal-400 font-bold text-lg">
+              <div className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-700 dark:text-indigo-400 font-bold text-lg">
                 {testimonial.author.charAt(0)}
               </div>
               <div>

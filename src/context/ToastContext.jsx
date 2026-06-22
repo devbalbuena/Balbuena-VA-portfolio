@@ -35,7 +35,7 @@ export function ToastProvider({ children }) {
               className={cn(
                 "flex items-center justify-between gap-4 px-4 py-3 rounded-lg shadow-lg border backdrop-blur-md min-w-[300px]",
                 toast.type === 'success' 
-                  ? "bg-teal-50/90 text-teal-900 border-teal-200 dark:bg-teal-900/90 dark:text-teal-50 dark:border-teal-800"
+                  ? "bg-indigo-50/90 text-indigo-900 border-indigo-200 dark:bg-indigo-900/90 dark:text-indigo-50 dark:border-indigo-800"
                   : "bg-red-50/90 text-red-900 border-red-200 dark:bg-red-900/90 dark:text-red-50 dark:border-red-800"
               )}
             >

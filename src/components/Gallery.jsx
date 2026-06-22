@@ -32,7 +32,7 @@ function GalleryCard({ src, idx, onClick }) {
         onError={handleError}
       />
       {/* Subtle hover overlay */}
-      <div className="absolute inset-0 bg-teal-900/0 hover:bg-teal-900/20 transition-colors duration-300 flex items-center justify-center">
+      <div className="absolute inset-0 bg-indigo-900/0 hover:bg-indigo-900/20 transition-colors duration-300 flex items-center justify-center">
         <span className="opacity-0 hover:opacity-100 text-white text-xs font-semibold bg-black/50 px-3 py-1.5 rounded-full backdrop-blur-sm transition-opacity duration-300">
           View
         </span>
@@ -76,7 +76,7 @@ export default function Gallery() {
     >
       <div className="px-8 mb-6">
         <h2 className="text-2xl font-semibold text-slate-900 dark:text-white flex items-center gap-2">
-          <span className="w-8 h-[2px] bg-teal-600 rounded-full" />
+          <span className="w-8 h-[2px] bg-indigo-600 rounded-full" />
           Gallery
         </h2>
       </div>

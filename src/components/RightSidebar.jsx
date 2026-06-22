@@ -31,9 +31,9 @@ export default function RightSidebar() {
       >
         <h3 className="text-lg font-semibold mb-4 text-slate-900 dark:text-white">Contact Info</h3>
         <div className="space-y-4">
-          <a href="tel:+639912131795" className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors group">
-            <div className="w-10 h-10 rounded-full bg-teal-50 dark:bg-teal-900/30 flex items-center justify-center group-hover:bg-teal-100 dark:group-hover:bg-teal-900/50 transition-colors">
-              <Phone size={18} className="text-teal-600 dark:text-teal-400" />
+          <a href="tel:+639912131795" className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group">
+            <div className="w-10 h-10 rounded-full bg-indigo-50 dark:bg-indigo-900/30 flex items-center justify-center group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/50 transition-colors">
+              <Phone size={18} className="text-indigo-600 dark:text-indigo-400" />
             </div>
             <div>
               <p className="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">Phone</p>
@@ -41,9 +41,9 @@ export default function RightSidebar() {
             </div>
           </a>
           
-          <a href={`mailto:${email}`} className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors group">
-            <div className="w-10 h-10 rounded-full bg-teal-50 dark:bg-teal-900/30 flex items-center justify-center group-hover:bg-teal-100 dark:group-hover:bg-teal-900/50 transition-colors">
-              <Mail size={18} className="text-teal-600 dark:text-teal-400" />
+          <a href={`mailto:${email}`} className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group">
+            <div className="w-10 h-10 rounded-full bg-indigo-50 dark:bg-indigo-900/30 flex items-center justify-center group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/50 transition-colors">
+              <Mail size={18} className="text-indigo-600 dark:text-indigo-400" />
             </div>
             <div>
               <p className="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">Email</p>
@@ -52,8 +52,8 @@ export default function RightSidebar() {
           </a>
           
           <div className="flex items-center gap-3 text-slate-600 dark:text-slate-300 group">
-            <div className="w-10 h-10 rounded-full bg-teal-50 dark:bg-teal-900/30 flex items-center justify-center">
-              <MapPin size={18} className="text-teal-600 dark:text-teal-400" />
+            <div className="w-10 h-10 rounded-full bg-indigo-50 dark:bg-indigo-900/30 flex items-center justify-center">
+              <MapPin size={18} className="text-indigo-600 dark:text-indigo-400" />
             </div>
             <div>
               <p className="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">Location</p>
@@ -66,16 +66,18 @@ export default function RightSidebar() {
       {/* Quick CTA Card */}
       <motion.div 
         variants={fadeInUp}
-        className="p-6 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-700 dark:from-teal-800 dark:to-slate-900 text-white shadow-md relative overflow-hidden"
+        className="p-6 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-600 dark:from-amber-700 dark:to-slate-900 text-slate-900 dark:text-amber-50 shadow-md relative overflow-hidden"
       >
-        <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-10 -mt-10 blur-2xl"></div>
-        <div className="absolute bottom-0 left-0 w-24 h-24 bg-teal-300/20 rounded-full -ml-8 -mb-8 blur-xl"></div>
+        {/* Abstract background shapes */}
+        <div className="absolute top-0 right-0 w-32 h-32 bg-white/20 dark:bg-amber-400/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/20 dark:bg-amber-400/10 rounded-full -ml-8 -mb-8 blur-xl"></div>
         
         <h3 className="text-xl font-bold mb-2 relative z-10">Ready to save time?</h3>
-        <p className="text-teal-50 text-sm mb-6 relative z-10">Let's discuss how I can help streamline your daily operations.</p>
+        <p className="text-slate-800/90 dark:text-amber-100/80 text-sm mb-6 relative z-10">Let's discuss how I can help streamline your daily operations.</p>
+        
         <button 
           onClick={scrollToContact}
-          className="w-full py-3 bg-white text-teal-700 hover:bg-slate-50 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 shadow-sm relative z-10"
+          className="w-full py-3 bg-slate-900 text-amber-50 dark:bg-white dark:text-amber-700 hover:bg-slate-800 dark:hover:bg-amber-50 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 shadow-sm relative z-10"
         >
           Hire Me
         </button>

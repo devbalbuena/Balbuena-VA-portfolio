@@ -35,7 +35,7 @@ export default function MobileCTA() {
         >
           <button
             onClick={handleContact}
-            className="flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 active:scale-95 text-white font-semibold rounded-full shadow-xl shadow-teal-600/30 transition-all text-sm"
+            className="flex items-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-600 active:scale-95 text-slate-900 font-semibold rounded-full shadow-xl shadow-amber-500/30 transition-all text-sm"
           >
             <Mail size={16} />
             Hire Me

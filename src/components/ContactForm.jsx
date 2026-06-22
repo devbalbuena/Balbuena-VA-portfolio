@@ -118,7 +118,7 @@ export default function ContactForm() {
               required 
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/50 dark:text-white transition-colors text-sm"
+              className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500/50 dark:text-white transition-colors text-sm"
               placeholder="John Doe"
             />
           </div>
@@ -131,7 +131,7 @@ export default function ContactForm() {
               required 
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/50 dark:text-white transition-colors text-sm"
+              className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500/50 dark:text-white transition-colors text-sm"
               placeholder="john@example.com"
             />
           </div>
@@ -146,7 +146,7 @@ export default function ContactForm() {
             required 
             value={formData.subject}
             onChange={handleChange}
-            className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/50 dark:text-white transition-colors text-sm"
+            className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500/50 dark:text-white transition-colors text-sm"
             placeholder="Project Inquiry"
           />
         </div>
@@ -160,7 +160,7 @@ export default function ContactForm() {
             rows={4}
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500/50 dark:text-white transition-colors text-sm resize-none"
+            className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500/50 dark:text-white transition-colors text-sm resize-none"
             placeholder="How can I help you?"
           />
         </div>
@@ -168,7 +168,7 @@ export default function ContactForm() {
         <button 
           type="submit" 
           disabled={isDisabled}
-          className="w-full py-2.5 px-4 bg-teal-600 hover:bg-teal-700 disabled:bg-slate-300 disabled:dark:bg-slate-700 text-white font-medium rounded-lg transition-colors flex items-center justify-center gap-2"
+          className="w-full py-2.5 px-4 bg-indigo-600 hover:bg-indigo-700 disabled:bg-slate-300 disabled:dark:bg-slate-700 text-white font-medium rounded-lg transition-colors flex items-center justify-center gap-2"
         >
           {isSubmitting ? (
             <Loader2 size={18} className="animate-spin" />

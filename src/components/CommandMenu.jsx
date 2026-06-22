@@ -70,32 +70,32 @@ export default function CommandMenu() {
           <Command.Empty className="p-4 text-center text-sm text-slate-500">No results found.</Command.Empty>
 
           <Command.Group heading="Navigation" className="px-2 py-2 text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-            <Command.Item onSelect={() => scrollTo('services')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-teal-600 dark:aria-selected:text-teal-400 transition-colors">
+            <Command.Item onSelect={() => scrollTo('services')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
               <Navigation size={16} /> Services
             </Command.Item>
-            <Command.Item onSelect={() => scrollTo('about')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-teal-600 dark:aria-selected:text-teal-400 transition-colors">
+            <Command.Item onSelect={() => scrollTo('about')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
               <Navigation size={16} /> About Me
             </Command.Item>
-            <Command.Item onSelect={() => scrollTo('skills')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-teal-600 dark:aria-selected:text-teal-400 transition-colors">
+            <Command.Item onSelect={() => scrollTo('skills')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
               <Navigation size={16} /> Skills
             </Command.Item>
-            <Command.Item onSelect={() => scrollTo('testimonials')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-teal-600 dark:aria-selected:text-teal-400 transition-colors">
+            <Command.Item onSelect={() => scrollTo('testimonials')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
               <Navigation size={16} /> Testimonials
             </Command.Item>
-            <Command.Item onSelect={() => scrollTo('contact')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-teal-600 dark:aria-selected:text-teal-400 transition-colors">
+            <Command.Item onSelect={() => scrollTo('contact')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
               <Navigation size={16} /> Contact
             </Command.Item>
           </Command.Group>
 
           <Command.Group heading="Actions" className="px-2 py-2 mt-2 text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-            <Command.Item onSelect={toggleTheme} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-teal-600 dark:aria-selected:text-teal-400 transition-colors">
+            <Command.Item onSelect={toggleTheme} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
               {isDark ? <Sun size={16} /> : <Moon size={16} />} 
               Toggle {isDark ? 'Light' : 'Dark'} Mode
             </Command.Item>
-            <Command.Item onSelect={copyEmail} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-teal-600 dark:aria-selected:text-teal-400 transition-colors">
+            <Command.Item onSelect={copyEmail} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
               <Copy size={16} /> Copy Email Address
             </Command.Item>
-            <Command.Item onSelect={downloadResume} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-teal-600 dark:aria-selected:text-teal-400 transition-colors">
+            <Command.Item onSelect={downloadResume} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
               <Download size={16} /> Download Resume
             </Command.Item>
           </Command.Group>

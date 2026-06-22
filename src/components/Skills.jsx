@@ -109,7 +109,7 @@ function SkillChip({ skill }) {
     <motion.span
       whileHover={{ scale: 1.05, y: -1 }}
       whileTap={{ scale: 0.97 }}
-      className="flex items-center gap-1.5 px-3 py-1.5 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium border border-slate-200 dark:border-slate-700 hover:border-teal-400 dark:hover:border-teal-600 hover:bg-teal-50/50 dark:hover:bg-teal-900/20 hover:shadow-sm transition-all cursor-default select-none"
+      className="flex items-center gap-1.5 px-3 py-1.5 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium border border-slate-200 dark:border-slate-700 hover:border-indigo-400 dark:hover:border-indigo-600 hover:bg-indigo-50/50 dark:hover:bg-indigo-900/20 hover:shadow-sm transition-all cursor-default select-none"
     >
       {icon && icon}
       {skill}
@@ -125,14 +125,14 @@ export default function Skills() {
       className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md card-hover"
     >
       <h2 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-white flex items-center gap-2">
-        <span className="w-8 h-[2px] bg-teal-600 rounded-full" />
+        <span className="w-8 h-[2px] bg-indigo-600 rounded-full" />
         Tools & Skills
       </h2>
 
       <div className="space-y-6">
         {skillCategories.map((category, index) => (
           <div key={index}>
-            <h3 className="text-xs font-bold text-teal-600 dark:text-teal-400 mb-3 uppercase tracking-widest">
+            <h3 className="text-xs font-bold text-indigo-600 dark:text-indigo-400 mb-3 uppercase tracking-widest">
               {category.title}
             </h3>
             <div className="flex flex-wrap gap-2.5">
