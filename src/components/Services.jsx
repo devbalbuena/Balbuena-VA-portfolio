@@ -73,7 +73,7 @@ export default function Services() {
     <motion.section 
       id="services"
       variants={fadeInUp}
-      className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md"
+      className="p-8 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md card-hover"
     >
       <h2 className="text-2xl font-semibold mb-6 text-slate-900 dark:text-white flex items-center gap-2">
         <span className="w-8 h-[2px] bg-teal-600 rounded-full" />
@@ -88,7 +88,7 @@ export default function Services() {
               key={index}
               whileHover={{ scale: 1.02, y: -4 }}
               transition={{ duration: 0.2 }}
-              className="flex flex-col h-full p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-teal-200 dark:hover:border-teal-900/50 transition-all group"
+              className="flex flex-col h-full p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-lg hover:border-teal-300 dark:hover:border-teal-700 hover:bg-teal-50/30 dark:hover:bg-teal-900/20 transition-all duration-300 group"
             >
               <div className="w-12 h-12 rounded-lg bg-teal-50 dark:bg-teal-900/30 flex items-center justify-center mb-4 group-hover:bg-teal-100 dark:group-hover:bg-teal-900/50 transition-colors">
                 <Icon className="text-teal-600 dark:text-teal-400" size={24} />

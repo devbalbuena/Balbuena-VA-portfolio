@@ -1,7 +1,45 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fadeInUp } from '../motion/variants';
-import { X } from 'lucide-react';
+import { X, ImageIcon } from 'lucide-react';
+
+function GalleryCard({ src, idx, onClick }) {
+  const [loaded, setLoaded] = useState(false);
+  const [errored, setErrored] = useState(false);
+  const [imgSrc, setImgSrc] = useState(src);
+
+  const handleError = () => {
+    setImgSrc(`https://picsum.photos/seed/${idx + 42}/640/480`);
+  };
+
+  return (
+    <div
+      className="w-80 md:w-96 h-56 md:h-64 mx-4 flex-shrink-0 cursor-pointer overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800 relative bg-slate-100 dark:bg-slate-800 group/card"
+      onClick={onClick}
+    >
+      {/* Skeleton shimmer */}
+      {!loaded && (
+        <div className="absolute inset-0 flex items-center justify-center bg-slate-100 dark:bg-slate-800">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 dark:via-white/5 to-transparent animate-[shimmer_1.5s_infinite] bg-[length:200%_100%]" />
+          <ImageIcon size={32} className="text-slate-300 dark:text-slate-600 relative z-10" />
+        </div>
+      )}
+      <img
+        src={imgSrc}
+        alt={`Gallery image ${idx + 1}`}
+        className={`w-full h-full object-cover transition-all duration-700 group/card-hover:scale-110 ${loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`}
+        onLoad={() => setLoaded(true)}
+        onError={handleError}
+      />
+      {/* Subtle hover overlay */}
+      <div className="absolute inset-0 bg-teal-900/0 hover:bg-teal-900/20 transition-colors duration-300 flex items-center justify-center">
+        <span className="opacity-0 hover:opacity-100 text-white text-xs font-semibold bg-black/50 px-3 py-1.5 rounded-full backdrop-blur-sm transition-opacity duration-300">
+          View
+        </span>
+      </div>
+    </div>
+  );
+}
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -46,38 +84,12 @@ export default function Gallery() {
       <div className="relative w-full flex overflow-hidden group">
         <div className="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap will-change-transform">
           {marqueeImages.map((src, idx) => (
-            <div 
-              key={idx} 
-              className="w-80 md:w-96 h-56 md:h-64 mx-4 flex-shrink-0 cursor-pointer overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800"
-              onClick={() => setSelectedImage(src)}
-            >
-              <img 
-                src={src} 
-                alt={`Gallery image ${idx}`} 
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                onError={(e) => {
-                  e.target.src = `https://picsum.photos/seed/${idx}/400/300`; // Placeholder if missing
-                }}
-              />
-            </div>
+            <GalleryCard key={idx} src={src} idx={idx} onClick={() => setSelectedImage(src)} />
           ))}
         </div>
         <div className="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap will-change-transform absolute top-0 left-0">
           {marqueeImages.map((src, idx) => (
-            <div 
-              key={`dup-${idx}`} 
-              className="w-80 md:w-96 h-56 md:h-64 mx-4 flex-shrink-0 cursor-pointer overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800"
-              onClick={() => setSelectedImage(src)}
-            >
-              <img 
-                src={src} 
-                alt={`Gallery image ${idx}`} 
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                onError={(e) => {
-                  e.target.src = `https://picsum.photos/seed/${idx}/400/300`; // Placeholder if missing
-                }}
-              />
-            </div>
+            <GalleryCard key={`dup-${idx}`} src={src} idx={idx} onClick={() => setSelectedImage(src)} />
           ))}
         </div>
       </div>
