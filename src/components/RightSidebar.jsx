@@ -66,18 +66,18 @@ export default function RightSidebar() {
       {/* Quick CTA Card */}
       <motion.div 
         variants={fadeInUp}
-        className="p-6 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-600 dark:from-amber-700 dark:to-slate-900 text-slate-900 dark:text-amber-50 shadow-md relative overflow-hidden"
+        className="p-6 rounded-2xl bg-slate-800 border border-slate-700 text-slate-50 shadow-md relative overflow-hidden"
       >
         {/* Abstract background shapes */}
-        <div className="absolute top-0 right-0 w-32 h-32 bg-white/20 dark:bg-amber-400/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
-        <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/20 dark:bg-amber-400/10 rounded-full -ml-8 -mb-8 blur-xl"></div>
+        <div className="absolute top-0 right-0 w-32 h-32 bg-sky-400/10 dark:bg-sky-400/5 rounded-full -mr-16 -mt-16 blur-2xl"></div>
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-indigo-400/10 dark:bg-indigo-400/5 rounded-full -ml-8 -mb-8 blur-xl"></div>
         
         <h3 className="text-xl font-bold mb-2 relative z-10">Ready to save time?</h3>
-        <p className="text-slate-800/90 dark:text-amber-100/80 text-sm mb-6 relative z-10">Let's discuss how I can help streamline your daily operations.</p>
+        <p className="text-slate-300 text-sm mb-6 relative z-10">Let's discuss how I can help streamline your daily operations.</p>
         
         <button 
           onClick={scrollToContact}
-          className="w-full py-3 bg-slate-900 text-amber-50 dark:bg-white dark:text-amber-700 hover:bg-slate-800 dark:hover:bg-amber-50 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 shadow-sm relative z-10"
+          className="w-full py-3 bg-slate-900 dark:bg-slate-900 text-sky-400 dark:text-sky-400 border border-transparent dark:border-sky-500/30 hover:bg-slate-800 dark:hover:bg-slate-950 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 shadow-sm relative z-10"
         >
           Hire Me
         </button>

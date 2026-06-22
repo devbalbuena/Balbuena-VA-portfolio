@@ -75,14 +75,14 @@ export default function Header() {
             </a>
             
             <div className="ml-auto flex flex-wrap items-center gap-3">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-100/80 dark:bg-amber-900/40 text-amber-700 dark:text-amber-400 rounded-full text-sm font-medium border border-amber-200 dark:border-amber-800/50 shadow-sm whitespace-nowrap">
-                <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-indigo-100/80 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-400 rounded-full text-sm font-medium border border-indigo-200 dark:border-indigo-800/50 shadow-sm whitespace-nowrap">
+                <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
                 Available for Work
               </span>
               <a 
                 href="/cv.pdf" 
                 download
-                className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-slate-900 rounded-lg font-medium transition-transform hover:scale-105 active:scale-95 text-sm shadow-md shadow-amber-500/20"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-indigo-400 dark:hover:border-indigo-400 text-indigo-600 dark:text-indigo-400 rounded-lg font-medium transition-transform hover:scale-105 active:scale-95 text-sm"
               >
                 <Download size={16} />
                 Download Resume
