@@ -79,6 +79,9 @@ export default function CommandMenu() {
             <Command.Item onSelect={() => scrollTo('skills')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
               <Navigation size={16} /> Skills
             </Command.Item>
+            <Command.Item onSelect={() => scrollTo('experience')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
+              <Navigation size={16} /> Experience
+            </Command.Item>
             <Command.Item onSelect={() => scrollTo('testimonials')} className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-slate-700 dark:text-slate-300 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700 aria-selected:text-indigo-600 dark:aria-selected:text-indigo-400 transition-colors">
               <Navigation size={16} /> Testimonials
             </Command.Item>

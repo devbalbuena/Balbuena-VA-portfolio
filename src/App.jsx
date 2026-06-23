@@ -6,6 +6,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Services from './components/Services';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
 import Testimonials from './components/Testimonials';
 import CurrentWork from './components/CurrentWork';
 import Gallery from './components/Gallery';
@@ -42,6 +43,7 @@ function PortfolioApp() {
             <CurrentWork />
             <Services />
             <Skills />
+            <Experience />
             <Gallery />
             <Testimonials />
           </div>
