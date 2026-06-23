@@ -66,21 +66,42 @@ export default function RightSidebar() {
       {/* Quick CTA Card */}
       <motion.div 
         variants={fadeInUp}
-        className="p-6 rounded-2xl bg-slate-900 dark:bg-slate-900 border border-slate-800 text-slate-50 shadow-md relative overflow-hidden"
+        className="p-6 rounded-2xl relative overflow-hidden"
+        style={{
+          background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4c1d95 100%)',
+          border: '1px solid rgba(129, 140, 248, 0.2)',
+          boxShadow: '0 8px 32px rgba(99, 102, 241, 0.15), inset 0 1px 0 rgba(255,255,255,0.05)'
+        }}
       >
-        {/* Abstract background shapes */}
-        <div className="absolute top-0 right-0 w-32 h-32 bg-sky-400/10 dark:bg-sky-400/5 rounded-full -mr-16 -mt-16 blur-2xl"></div>
-        <div className="absolute bottom-0 left-0 w-24 h-24 bg-indigo-400/10 dark:bg-indigo-400/5 rounded-full -ml-8 -mb-8 blur-xl"></div>
-        
-        <h3 className="text-xl font-bold mb-2 relative z-10">Ready to save time?</h3>
-        <p className="text-slate-300 text-sm mb-6 relative z-10">Let's discuss how I can help streamline your daily operations.</p>
-        
-        <button 
-          onClick={scrollToContact}
-          className="w-full py-3 bg-violet-600 text-white border border-transparent hover:bg-violet-700 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 shadow-sm shadow-violet-600/20 relative z-10"
-        >
-          Hire Me
-        </button>
+        {/* Glowing orb inside card */}
+        <div className="absolute top-0 right-0 w-40 h-40 rounded-full -mr-16 -mt-16 blur-3xl" style={{ background: 'radial-gradient(circle, rgba(167, 139, 250, 0.35) 0%, transparent 70%)' }} />
+        <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full -ml-10 -mb-10 blur-2xl" style={{ background: 'radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, transparent 70%)' }} />
+
+        {/* Subtle top border highlight */}
+        <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(90deg, transparent, rgba(167,139,250,0.5), transparent)' }} />
+
+        <div className="relative z-10">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-violet-300 text-lg">✦</span>
+            <h3 className="text-xl font-bold text-white">Ready to save time?</h3>
+          </div>
+          <p className="text-indigo-200/80 text-sm mb-6 leading-relaxed">Let's discuss how I can help streamline your daily operations.</p>
+          
+          <button 
+            onClick={scrollToContact}
+            className="w-full py-3 rounded-xl font-bold text-white relative overflow-hidden group transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+            style={{
+              background: 'linear-gradient(135deg, #6366f1, #7c3aed)',
+              boxShadow: '0 4px 20px rgba(99, 102, 241, 0.4), inset 0 1px 0 rgba(255,255,255,0.15)'
+            }}
+          >
+            <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ background: 'linear-gradient(135deg, #818cf8, #8b5cf6)' }} />
+            <span className="relative z-10 flex items-center justify-center gap-2">
+              <span>Hire Me</span>
+              <span className="text-violet-200">→</span>
+            </span>
+          </button>
+        </div>
       </motion.div>
 
       {/* Contact Form Container */}
