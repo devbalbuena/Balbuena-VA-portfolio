@@ -82,7 +82,7 @@ export default function Header() {
               <a 
                 href="/cv.pdf" 
                 download
-                className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-indigo-400 dark:hover:border-indigo-400 text-indigo-600 dark:text-indigo-400 rounded-lg font-medium transition-transform hover:scale-105 active:scale-95 text-sm"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-violet-500 dark:hover:border-violet-500 text-violet-600 dark:text-violet-400 rounded-lg font-medium transition-transform hover:scale-105 active:scale-95 text-sm"
               >
                 <Download size={16} />
                 Download Resume

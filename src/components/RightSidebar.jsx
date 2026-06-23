@@ -27,7 +27,7 @@ export default function RightSidebar() {
       {/* Contact Info Card */}
       <motion.div 
         variants={fadeInUp}
-        className="p-6 rounded-2xl bg-white/50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md"
+        className="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-800 shadow-sm backdrop-blur-md"
       >
         <h3 className="text-lg font-semibold mb-4 text-slate-900 dark:text-white">Contact Info</h3>
         <div className="space-y-4">
@@ -66,7 +66,7 @@ export default function RightSidebar() {
       {/* Quick CTA Card */}
       <motion.div 
         variants={fadeInUp}
-        className="p-6 rounded-2xl bg-slate-800 border border-slate-700 text-slate-50 shadow-md relative overflow-hidden"
+        className="p-6 rounded-2xl bg-slate-900 dark:bg-slate-900 border border-slate-800 text-slate-50 shadow-md relative overflow-hidden"
       >
         {/* Abstract background shapes */}
         <div className="absolute top-0 right-0 w-32 h-32 bg-sky-400/10 dark:bg-sky-400/5 rounded-full -mr-16 -mt-16 blur-2xl"></div>
@@ -77,7 +77,7 @@ export default function RightSidebar() {
         
         <button 
           onClick={scrollToContact}
-          className="w-full py-3 bg-slate-900 dark:bg-slate-900 text-sky-400 dark:text-sky-400 border border-transparent dark:border-sky-500/30 hover:bg-slate-800 dark:hover:bg-slate-950 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 shadow-sm relative z-10"
+          className="w-full py-3 bg-violet-600 text-white border border-transparent hover:bg-violet-700 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 shadow-sm shadow-violet-600/20 relative z-10"
         >
           Hire Me
         </button>
